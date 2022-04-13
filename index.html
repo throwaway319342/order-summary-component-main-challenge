@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-image: url('./images/pattern-background-desktop.svg');
+    }
+
+    .flex-container {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+    }
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 13%;
+      padding-right: 13%;
+    }
+
+    .content-box {
+      height: 600px;
+      width: 450px;
+      border-radius: 25px;
+      background-color: white;
+    }
+
+    .payment-container-box {
+      display: flex;
+      flex-direction: column;
+      height: 230px;
+      width: 370px;
+      border-radius: 15px;
+      background-color: white;
+      justify-content: center;
+    }
+
+    .plan-container {
+      display: flex;
+      width: 100%;
+      border-radius: 15px;
+      justify-content: space-between;
+      align-items: center;
+      background-color: hsl(225, 100%, 98%);
+    }
+
+    img {
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+
+    .button-div {
+      padding-top: 5%;
+    }
+
+    .cancel-btn {
+      border-radius: 10px;
+      background-color: transparent;
+      border-color: transparent;
+      color: hsl(224, 23%, 55%);
+      width: 100%;
+      padding: 3%;
+    }
+
+    .cancel-btn:hover {
+      color: black;
+    }
+
+    .change-btn {
+      color: hsl(245, 75%, 52%);
+      border-color: transparent;
+      background-color: transparent;
+      font-weight: 700;
+    }
+
+    .change-btn:hover {
+      color: hsl(224, 23%, 55%);
+    }
+
+    .proceed-btn {
+      border-radius: 10px;
+      background-color: hsl(245, 75%, 52%);
+      border-color: transparent;
+      box-shadow: 5px 10px 18px #888888;
+      color: white;
+      width: 100%;
+      padding: 3%;
+    }
+
+    .proceed-btn:hover {
+      background-color: hsl(224, 23%, 55%);
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="content-box">
+      <div>
+        <img src="./images/illustration-hero.svg" width="450" height="200">
+      </div>
+      <div class="content-container">
+        <div>
+          <h1>Order Summary</h1>
+        </div>
+        <div>
+          <p style="margin-top: 0; margin-bottom: 0; line-height: 1.4em; text-align: center; color: hsl(224, 23%, 55%);">
+            You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+          </p>
+        </div>
+        <div class="payment-container-box">
+          <div class="plan-container">
+            <div style="padding-left: 5%"> 
+              <img src="./images/icon-music.svg">
+            </div>
+            <div style="padding-right: 30%;">
+              <p style="margin-bottom: 0.5em; font-weight: 900;">Annual Plan</p>
+              <p style="margin-top: 0.4em; color: hsl(224, 23%, 55%)">$59.99/year</p>
+            </div>
+            <div style="padding-right: 5%;">
+              <button class="change-btn"><u>Change</u></button>
+            </div>
+          </div>
+          <div class="button-div">
+            <button class="proceed-btn">Proceed to Payment</button>
+          </div>
+          <div class="button-div">
+            <button class="cancel-btn">Cancel Order</button>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
